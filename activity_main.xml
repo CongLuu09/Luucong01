@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+    <!--tên người-->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextName"
+        android:hint="Tên người"
+        android:textSize="30dp"
+        />
+    <!-- Chứng minh nhân dân -->
+    <EditText
+        android:id="@+id/editTextID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="9"
+        android:textSize="30dp"
+        android:hint="Chứng minh nhân dân"
+        />
+
+    <!-- Bằng cấp -->
+    <RadioGroup
+        android:id="@+id/radioGroupEducation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonUniversity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đại học"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+
+        <RadioButton
+            android:id="@+id/radioButtonCollege"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cao đẳng"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+    </RadioGroup>
+    <!-- Sở thích -->
+    <CheckBox
+        android:id="@+id/checkBoxFootball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bóng đá"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBoxBasketball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bóng rổ"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBoxVolleyball"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đá cầu"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        />
+    <!-- Thông tin bổ sung -->
+    <EditText
+        android:id="@+id/editTextAdditionalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Thông tin bổ sung"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        />
+    <!-- Nút gửi thông tin -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSubmit"
+        android:text="Gửi thông tin"
+        android:onClick="onSubmitButtonClick"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        />
+</androidx.appcompat.widget.LinearLayoutCompat>
