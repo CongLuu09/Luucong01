@@ -8,7 +8,7 @@
     tools:context=".MainActivity"
     android:orientation="vertical"
     >
-    <!--tên người-->
+  
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,7 +16,7 @@
         android:hint="Tên người"
         android:textSize="30dp"
         />
-    <!-- Chứng minh nhân dân -->
+   
     <EditText
         android:id="@+id/editTextID"
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
         android:hint="Chứng minh nhân dân"
         />
 
-    <!-- Bằng cấp -->
+  
     <RadioGroup
         android:id="@+id/radioGroupEducation"
         android:layout_width="match_parent"
@@ -52,7 +52,7 @@
             android:textColor="@color/black"
             />
     </RadioGroup>
-    <!-- Sở thích -->
+
     <CheckBox
         android:id="@+id/checkBoxFootball"
         android:layout_width="wrap_content"
@@ -79,7 +79,7 @@
         android:textSize="30dp"
         android:textColor="@color/black"
         />
-    <!-- Thông tin bổ sung -->
+   
     <EditText
         android:id="@+id/editTextAdditionalInfo"
         android:layout_width="match_parent"
@@ -88,7 +88,7 @@
         android:textSize="30dp"
         android:textColor="@color/black"
         />
-    <!-- Nút gửi thông tin -->
+   
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
