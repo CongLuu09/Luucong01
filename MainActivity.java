@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onSubmitButtonClick(View view)
     {
-        // Lấy thông tin từ các thành phần giao diện
+        
         EditText editTextName = findViewById(R.id.editTextName);
         EditText editTextID = findViewById(R.id.editTextID);
         RadioGroup radioGroupEducation = findViewById(R.id.radioGroupEducation);
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkBoxVolleyball = findViewById(R.id.checkBoxVolleyball);
         EditText editTextAdditionalInfo = findViewById(R.id.editTextAdditionalInfo);
 
-        // Kiểm tra điều kiện
+       
         if (editTextName.getText().toString().isEmpty() || editTextName.getText().toString().length() < 3) {
             Toast.makeText(this, "Tên không hợp lệ", Toast.LENGTH_SHORT).show();
             return;
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        // Hiển thị thông tin
+        
         String info = "Tên: " + editTextName.getText().toString() + "\n";
         info += "Chứng minh nhân dân: " + editTextID.getText().toString() + "\n";
 
@@ -88,10 +88,10 @@ public class MainActivity extends AppCompatActivity {
             info += "Đá cầu, ";
         }
 
-        info = info.substring(0, info.length() - 2); // Loại bỏ dấu phẩy và khoảng trắng cuối cùng
+        info = info.substring(0, info.length() - 2);
         info += "\nThông tin bổ sung: " + editTextAdditionalInfo.getText().toString();
 
-        // Hiển thị thông tin trong Toast hoặc có thể làm gì đó khác với thông tin này
+     
         Toast.makeText(this, info, Toast.LENGTH_LONG).show();
     }
 }
